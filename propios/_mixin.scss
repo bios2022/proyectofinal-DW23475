@@ -1,0 +1,8 @@
+@mixin sombra-card($ejex: 0, $ejey: 1px, $sombra: 2px, $color: $default) {
+    box-shadow: $ejex $ejey $sombra $color;
+  }
+  
+  .card {
+    margin: 10px;
+    @include sombra-card(5px, 5px, 5px, #333)
+  }

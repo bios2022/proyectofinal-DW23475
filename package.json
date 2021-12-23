@@ -1,0 +1,19 @@
+{
+  "name": "prueba-def",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/bootstrap.scss css/bootstrap.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build2-css": "node-sass --include-path scss propios/propio.scss css/propio.css",
+    "watch2-css": "nodemon -e scss -x \"npm run build2-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

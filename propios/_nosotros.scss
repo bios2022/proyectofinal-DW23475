@@ -1,0 +1,46 @@
+/////////////////////     SECCIONES     /////////////////////////
+#nosotros{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap:10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        .nos{
+            width: 50%;
+            img{
+                width: 500px;
+                height: 350px;
+                object-fit: cover;  
+            }
+        }
+        .lista-iconos{
+            ul{
+                list-style-type: none;
+                li{
+                    padding-bottom: 20px;
+                }
+            }
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+} 
+
+
+@media screen and (max-width: 768px) {
+    #nosotros{
+            display: grid;
+            grid-template-columns: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .nos{
+                width:auto;
+            }
+            .lista-iconos{
+                width: auto;
+            }
+        }
+}

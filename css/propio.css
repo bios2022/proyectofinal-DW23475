@@ -1,0 +1,202 @@
+#menu-superior {
+  height: 100px; }
+
+h1 {
+  text-align: center;
+  font-family: 'Crete Round', serif;
+  color: white; }
+
+h2, h3, h5 {
+  text-align: center;
+  font-family: 'Crete Round', serif;
+  color: black; }
+
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15%;
+  margin: 5px; }
+
+.fa:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+  color: grey; }
+
+.fa-facebook {
+  background: #3B5998;
+  color: white; }
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white; }
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white; }
+
+.fa-youtube {
+  background: #bb0000;
+  color: white; }
+
+.fa-instagram {
+  background: #125688;
+  color: white; }
+
+@media screen and (max-width: 768px) {
+  .fa {
+    padding: 2px;
+    font-size: 20px;
+    margin: 2px; } }
+
+.card {
+  margin: 10px;
+  box-shadow: 5px 5px 5px #333; }
+
+header {
+  background-color: #292b2c; }
+  header nav {
+    background-color: #292b2c;
+    border-bottom: 8px solid red; }
+  header .nav-item :hover {
+    border-bottom: 2px solid white; }
+
+footer {
+  background-color: #292b2c;
+  border-top: 6px solid red;
+  display: flex;
+  justify-content: space-between; }
+  footer .nav-inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    list-style-type: none; }
+    footer .nav-inferior a {
+      text-decoration: none;
+      color: #8b8b8b; }
+    footer .nav-inferior a:hover {
+      color: #ccc; }
+
+#categorias {
+  padding: 10px; }
+  #categorias .fila {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  #categorias .item:hover {
+    transform: scale(1.03);
+    border: 2px solid black; }
+
+#ofertas {
+  padding: 10px; }
+  #ofertas .fila {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  #ofertas .card:hover {
+    transform: scale(1.03);
+    border: 2px solid black; }
+
+@media screen and (max-width: 768px) {
+  #categorias .fila {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #ofertas .fila {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+#tienda {
+  padding: 10px; }
+  #tienda .fila {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px; }
+  #tienda .card:hover {
+    transform: scale(1.03);
+    border: 2px solid black; }
+
+@media screen and (max-width: 768px) {
+  #tienda .fila {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+.evento {
+  display: grid;
+  grid-template-columns: auto auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: auto; }
+  .evento img {
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover; }
+
+@media screen and (max-width: 576px) {
+  .evento {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+#nosotros {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start; }
+  #nosotros .nos {
+    width: 50%; }
+    #nosotros .nos img {
+      width: 500px;
+      height: 350px;
+      object-fit: cover; }
+  #nosotros .lista-iconos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #nosotros .lista-iconos ul {
+      list-style-type: none; }
+      #nosotros .lista-iconos ul li {
+        padding-bottom: 20px; }
+
+@media screen and (max-width: 768px) {
+  #nosotros {
+    display: grid;
+    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #nosotros .nos {
+      width: auto; }
+    #nosotros .lista-iconos {
+      width: auto; } }
+
+@media screen and (max-width: 512px) {
+  #textarea {
+    width: 80%; } }

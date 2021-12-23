@@ -1,0 +1,95 @@
+/////////////////////  HEADER - FOOTER   /////////////////////////
+header{
+    background-color: $color-primario;
+
+    nav{
+        background-color: $color-primario;
+        border-bottom: 8px solid $color-secundario;
+    }
+    .nav-item :hover{
+        border-bottom: 2px solid $color-hover;
+    }
+}
+
+footer{
+    background-color: $color-primario;
+    border-top: 6px solid $color-secundario;
+    display: flex;
+    justify-content: space-between;
+    .nav-inferior{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        list-style-type: none;
+        a{
+            text-decoration: none;
+            color: rgb(139, 139, 139);
+        }
+        a:hover{
+            color: #ccc;
+        }
+    }
+   
+    
+} 
+
+/////////////////////     SECCIONES     /////////////////////////
+#categorias{
+    padding: 10px;
+    .fila{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .item:hover{
+        transform: scale(1.03);
+        border: 2px solid black ;
+    }
+} 
+#ofertas{
+    padding: 10px;
+    .fila{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .card:hover{
+        transform: scale(1.03);
+        border: 2px solid black;
+    }
+    
+} 
+
+
+/////////////////////     MEDIA QUERIES     /////////////////////////
+
+@media screen and (max-width: 768px) {
+#categorias{
+    .fila{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+ }
+
+ #ofertas{
+    .fila{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+ }
+
+}
